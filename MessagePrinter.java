@@ -1,8 +1,13 @@
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
+
 public class MessagePrinter {
 
     public static void main(String[] args) {
         printWelcomeMessage();
         printGoodbyeMessage();
+        printCurrentTime();
+        printAuthorMessage();
     }
 
     public static void printWelcomeMessage() {
@@ -11,5 +16,14 @@ public class MessagePrinter {
 
     public static void printGoodbyeMessage() {
         System.out.println("Goodbye! Thanks for using Message Printer!");
+    }
+
+    public static void printCurrentTime() {
+        String time = LocalTime.now().format(DateTimeFormatter.ofPattern("HH:mm:ss"));
+        System.out.println("Current time: " + time);
+    }
+
+    public static void printAuthorMessage() {
+        System.out.println("Created by: Sofia Antonova");
     }
 }
