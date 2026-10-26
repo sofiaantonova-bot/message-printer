@@ -6,7 +6,7 @@ public class MessagePrinter {
     }
 
     public static void printWelcomeMessage() {
-        System.out.println("Welcome to the Message Printer!");
+        System.out.println("Hello! Welcome to Message Printer!");
     }
 
     public static void printGoodbyeMessage() {
